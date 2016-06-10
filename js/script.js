@@ -1,22 +1,56 @@
 
-var btnEE = document.querySelector(".btn-Enterprise-Edition");
-var btnSMB = document.querySelector(".btn-SMB-Edition");
-var EE = document.querySelector(".Enterprise-Edition");
-var SMB = document.querySelector(".SMB-Edition");
+var btnNavFirst = document.querySelector(".first");
+var btnNavSecond = document.querySelector(".second");
+var ee = document.querySelector(".tab-page-second");
+var smb = document.querySelector(".tab-page-first");
 
-btnEE.addEventListener("click", function (event) {
+btnNavFirst.addEventListener("click", function (event) {
   event.preventDefault();    
-  btnEE.classList.add("active");
-  btnSMB.classList.remove("active");
-  EE.classList.remove("hidden");
-  SMB.classList.add("hidden");
+  btnNavFirst.classList.add("active");
+  btnNavSecond.classList.remove("active");
+  ee.classList.remove("hidden");
+  smb.classList.add("hidden");
 });
 
 
-btnSMB.addEventListener("click", function (event) {
+btnNavSecond.addEventListener("click", function (event) {
   event.preventDefault();    
-  btnSMB.classList.add("active");
-  btnEE.classList.remove("active");
-  EE.classList.add("hidden");
-  SMB.classList.remove("hidden");
+  btnNavSecond.classList.add("active");
+  btnNavFirst.classList.remove("active");
+  ee.classList.add("hidden");
+  smb.classList.remove("hidden");
+});
+
+var linkvideo1 = document.querySelector(".click-to-look-smb");
+var linkvideo2 = document.querySelector(".click-to-look-ee");
+var popupvideo = document.querySelector(".modal-video");
+var closevideo = document.querySelector(".modal-video-close");
+var overlay = document.querySelector(".modal-overlay");
+
+
+linkvideo1.addEventListener("click", function (event) {
+  event.preventDefault();
+  popupvideo.classList.remove("hidden");
+  overlay.classList.remove("hidden");    
+});
+
+linkvideo2.addEventListener("click", function (event) {
+  event.preventDefault();
+  popupvideo.classList.remove("hidden");
+  overlay.classList.remove("hidden");    
+});
+
+closevideo.addEventListener("click", function (event) {
+    event.preventDefault();
+    popupvideo.classList.add("hidden");
+    overlay.classList.add("hidden");
+});
+
+window.addEventListener("keydown", function(event) {
+    if (event.keyCode === 27) {
+        if (!popupvideo.classList.contains("hidden")) {
+            popupvideo.classList.add("hidden");
+            overlay.classList.add("hidden");
+        }
+    }
 });

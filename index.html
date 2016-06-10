@@ -6,7 +6,7 @@
         <meta name="description" content="Modern Data Protection Report about problems with backup and recovery">
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
     </head>    
     <body>
         <div class="wrap">
@@ -34,8 +34,8 @@
             <main>
                 <div class="all-pages">                
                     <ul class="list-of-pages">
-                        <li><a class="btn-Enterprise-Edition" href="#">Enterprise Edition</a></li>
-                        <li ><a class="btn-SMB-Edition active" href="#">SMB Edition</a></li>
+                        <li><a class="btn-nav-item first" href="#">Enterprise Edition</a></li>
+                        <li ><a class="btn-nav-item second active" href="#">SMB Edition</a></li>
                     </ul>
                     <div class="report-header">
                         <h1>Annual Data Protection Report 2013: <span>Enterprise and SMB Editions</span></h1>
@@ -43,45 +43,46 @@
                     </div>
                     <div class="main-information">
                         <div class="side-left">                            
-                            <section class="SMB-Edition">
+                            <section class="tab-page-first">
                                 <h3>SMB Edition</h3>
                                 <h3>85% of SMBs Experiencing Problems with Backup and Recovery</h3>
                                 <h4>Report shows 55% will change backup tool by 2014</h4>
                                 <p>Veeam reveals the findings of the recent SMB data protection survey:</p>
-                                <div class="description-smb">
-                                 <div class="side-left-img-smb">
-                                     <img src="img/annual-smb-report.png" width="197" height="140" alt="Veeam | Virtualization
-                                     Data Protection
-                                     Report 2013">
-                                     <a class="click-to-look-smb" href="http://www.youtube.com/watch?v=klModGpSKtc "><img src="img/hands_on_guide_click.png" alt="CLICK TO LOOK INSIDE"></a>
-                                 </div>
-                                 <div class="side-right-key-findings">
-                                     <ul>
-                                         <li>85% of SMBs are experiencing cost-related challenges with backup and recovery, 83% with capability and 80% with complexity</li>
-                                         <li>67% of the virtual environment is backed-up meaning that almost a third of SMBs’ virtual infrastructure is unprotected</li>
-                                         <li>More than 1 in 6 (17%) recoveries of backed-up machines cause problems</li>
-                                         <li>41% of SMBs stated that downtime in the event of an IT failure costs $150,000 or more per hour</li>
-                                     </ul>
-                                    </div>
+                                <div class="description-first">
+                                     <div class="side-left-img-smb">
+                                         <img src="img/annual-smb-report.png" width="197" height="140" alt="Veeam | Virtualization
+                                         Data Protection
+                                         Report 2013">
+                                         <a class="click-to-look-smb" href="http://www.youtube.com/watch?v=klModGpSKtc "><img src="img/hands_on_guide_click.png" alt="CLICK TO LOOK INSIDE"></a>
+                                     </div>
+                                     <div class="side-right-key-findings">
+                                         <ul>
+                                             <li>85% of SMBs are experiencing cost-related challenges with backup and recovery, 83% with capability and 80% with complexity</li>
+                                             <li>67% of the virtual environment is backed-up meaning that almost a third of SMBs’ virtual infrastructure is unprotected</li>
+                                             <li>More than 1 in 6 (17%) recoveries of backed-up machines cause problems</li>
+                                             <li>41% of SMBs stated that downtime in the event of an IT failure costs $150,000 or more per hour</li>
+                                         </ul>
+                                      </div>
                                 </div>
-                                
-                                     <h4>Infographics - SMB challenges with data protection in brief</h4>
-                                     <figure class="infographics">
-                                         <a href="#"><img src="img/smb_ingographics_web_preview_1_cut.png" alt="Infographics preview image1"></a> 
-                                         <a href="#"><img src="img/smb_infographics_web_preview_2_cut.png" alt="Infographics preview image2"></a>
-                                     </figure>
-                                     <a class="full-size-infographics" href="#">Click to view the full-size infographics</a>
+
+                                 <h4>Infographics - SMB challenges with data protection in brief</h4>
+                                 <figure class="infographics">
+                                     <a href="#"><img src="img/smb_ingographics_web_preview_1_cut.png" width="168" height="142" alt="Infographics preview image1"></a> 
+                                     <a href="#"><img src="img/smb_infographics_web_preview_2_cut.png" width="168" height="142" alt="Infographics preview image2"></a>
+                                 </figure>
+                                 <a class="full-size-infographics" href="#">Click to view the full-size infographics</a>
+                                  
                             </section>
-                            <section class="Enterprise-Edition hidden">
+                            <section class="tab-page-second hidden">
                                 <h3>Enterprise Edition</h3>
                                 <h3>CIO study Shows Capability, Complexity and Cost Issues
                                  Hampering IT Departments</h3>
-                                <div class="description-EE">
-                                     <div class="side-left-img-EE">
+                                <div class="description-second">
+                                     <div class="side-left-img-ee">
                                          <img src="img/preview-annual-dp-report.png" width="151" height="214" alt="Veeam | Virtualization
                                          Data Protection
                                          Report 2013">
-                                         <a class="click-to-look-EE" href="http://www.youtube.com/watch?v=klModGpSKtc "><img src="img/hands_on_guide_click.png" alt="CLICK TO LOOK INSIDE"></a>
+                                         <a class="click-to-look-ee" href="http://www.youtube.com/watch?v=klModGpSKtc "><img src="img/hands_on_guide_click.png" alt="CLICK TO LOOK INSIDE"></a>
                                      </div>
                                      <div class="side-right-key-findings">
                                          <p>Key findings:</p>
@@ -197,6 +198,30 @@
                         <a href="#">Privacy policy</a></p>
                 </div>
             </footer>
+            
+            <div class="modal-video hidden">
+                <button class="modal-video-close" type="button">Закрыть</button>
+                <h4>On-Demand Disaster Recovery for Virtualized Environments - Webinar</h4>
+                <iframe width="420" height="315" src="https://www.youtube.com/embed/klModGpSKtc" frameborder="0" allowfullscreen></iframe>
+                <p>What if you could have a disaster recovery site available on demand -- and only pay for it when you need it?
+                Every IT department wants a disaster recovery site -- but many have difficulty allocating the thousands -- or even tens of thousands
+                 -- of dollars to support a hosted, collocated or cloud compute environment that is dormant most of the time.
+                Join this educational webinar to learn how you can use Veeam and TwinStrata to obtain a viable disaster recovery plan that's affordable
+                to everyone.</p>
+
+                Highlights include:
+                <ul>
+                    <li>* Automatically copy backups to the cloud for easy-to-use offsite storage</li>
+                    <li>* Seamless integration eliminates errors and manual effort</li>
+                    <li>* Cloud storage delivers unlimited capacity in a pay-as-you-go model</li>
+                    <li>* Disaster recovery on demand</li>
+                    <li>* And more!</li>
+                </ul>
+                Speakers: Veeam: Jamie Mitchell, TwinStrata: Mike Lee
+            </div>
+            
+             <div class="modal-overlay hidden">                
+            </div>
         </div>
         <script src="js/script.js"></script>
     </body>
