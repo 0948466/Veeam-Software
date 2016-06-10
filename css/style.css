@@ -1,6 +1,6 @@
 body {
     min-width: 912px;
-    max-width: 1250px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 2% 3%;
     font-family: 'Roboto', sans-serif;
@@ -13,7 +13,7 @@ body {
 
 .wrap {
     min-width: 912px;
-    max-width: 1250px;
+    max-width: 1280px;
     padding: 0 2%;
     flex-basis: 100%;
     margin: 0 auto;    
