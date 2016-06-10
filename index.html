@@ -6,6 +6,7 @@
         <meta name="description" content="Modern Data Protection Report about problems with backup and recovery">
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
     </head>    
     <body>
         <div class="wrap">
@@ -33,16 +34,16 @@
             <main>
                 <div class="all-pages">                
                     <ul class="list-of-pages">
-                        <li class="btn-Enterprise-Edition active"><a href="#">Enterprise Edition</a></li>
-                        <li  class="btn-SMB-Edition"><a href="#">SMB Edition</a></li>
+                        <li><a class="btn-Enterprise-Edition" href="#">Enterprise Edition</a></li>
+                        <li ><a class="btn-SMB-Edition active" href="#">SMB Edition</a></li>
                     </ul>
                     <div class="report-header">
-                        <h1>Annual Data Protection Report 2013:<span>Enterprise and SMB Editions</span></h1>
+                        <h1>Annual Data Protection Report 2013: <span>Enterprise and SMB Editions</span></h1>
                         <h4>Survey of 500 enterprises and 500 small / medium businesses across USA, UK, Germany and France</h4>
                     </div>
                     <div class="main-information">
                         <div class="side-left">                            
-                            <section class="SMB-Edition hidden">
+                            <section class="SMB-Edition">
                                 <h3>SMB Edition</h3>
                                 <h3>85% of SMBs Experiencing Problems with Backup and Recovery</h3>
                                 <h4>Report shows 55% will change backup tool by 2014</h4>
@@ -71,7 +72,7 @@
                                      </figure>
                                      <a class="full-size-infographics" href="#">Click to view the full-size infographics</a>
                             </section>
-                            <section class="Enterprise-Edition">
+                            <section class="Enterprise-Edition hidden">
                                 <h3>Enterprise Edition</h3>
                                 <h3>CIO study Shows Capability, Complexity and Cost Issues
                                  Hampering IT Departments</h3>
@@ -83,7 +84,7 @@
                                          <a class="click-to-look-EE" href="http://www.youtube.com/watch?v=klModGpSKtc "><img src="img/hands_on_guide_click.png" alt="CLICK TO LOOK INSIDE"></a>
                                      </div>
                                      <div class="side-right-key-findings">
-                                         Key findings:
+                                         <p>Key findings:</p>
                                          <ul>
                                              <li>68% of CIOs feel that their backup and recovery tools will become less effective as the amount of data and servers in their organization grows</li>
                                              <li>88% of CIOs experience capability-related challenges with backup and recovery, 87% with cost and 84% with complexity: showing that data protection is still not a simple task</li>
@@ -98,29 +99,75 @@
                              <div class="container-register">
                                  <h2>Register here</h2>
                                  <form class="form-register" action="/registration" method="post" name="register">
-                                     <label for id="first_name">First name<span>*</span></label><input type="text" name="first_name" id="first_name" required>
-                                     <label>Last name<span>*</span><input type="text" name="first_name" required></label>
-                                     <label>Business email<span>*</span><input type="email" name="business_email" required></label>
-                                     <label>Company<span>*</span><input type="text" name="company" required></label>
-                                     <label>Job title<span>*</span>
-                                        <select name="job_title" required>
-                                             <option disabled selected>выберите из списка</option>
-                                             <option value="designer">designer</option>
-                                        </select>
-                                    </label>
-                                    <label>Country<span>*</span>
-                                        <select name="country" required>
-                                             <option value="us">United States</option>
-                                             <option value="rus">Russian Federation</option>
-                                        </select>
-                                    </label>
-                                    <label>State
-                                        <select name="state">
-                                             <option disabled selected>Select state</option>
-                                             <option value="alaska">Alaska</option>
-                                             <option value="florida">Florida</option>
-                                        </select>
-                                    </label>
+                                      <div class="table">
+                                           <div class="raw">
+                                               <div class="cell">
+                                                    <label for="first_name">First name<span>*</span></label>
+                                               </div>                                           
+                                               <div class="cell">   
+                                                   <input type="text" name="first_name" id="first_name" required>
+                                               </div>
+                                           </div>
+                                           <div class="raw">
+                                               <div class="cell">
+                                                    <label for="last_name">Last name<span>*</span></label>
+                                               </div>                                           
+                                               <div class="cell">   
+                                                   <input type="text" name="last_name" id="last_name" required>
+                                               </div>
+                                           </div>
+                                           <div class="raw">
+                                               <div class="cell">
+                                                   <label for="business_email">Business email<span>*</span></label>
+                                               </div>
+                                               <div class="cell">
+                                                   <input type="email" name="business_email" id="business_email" required>
+                                               </div>
+                                           </div>
+                                           <div class="raw">
+                                               <div class="cell">
+                                                   <label for="company">Company<span>*</span></label>
+                                               </div>
+                                               <div class="cell">
+                                                   <input type="text" name="company" id="company" required>
+                                               </div>
+                                           </div>
+                                           <div class="raw">
+                                               <div class="cell">
+                                                     <label for="job_title">Job title<span>*</span></label>
+                                               </div>
+                                               <div class="cell">
+                                                     <select name="job_title" id="job_title" required>
+                                                          <option disabled selected>Select job description</option>
+                                                          <option value="designer">designer</option>
+                                                     </select>
+                                               </div>
+                                           </div>
+                                           <div class="raw">
+                                               <div class="cell">         
+                                                    <label for="country">Country<span>*</span></label>
+                                               </div>
+                                               <div class="cell">
+                                                    <select name="country" id="country" required>
+                                                         <option value="us">United States</option>
+                                                         <option value="rus">Russian Federation</option>
+                                                    </select>
+                                               </div>
+                                           </div>
+                                           <div class="raw">
+                                               <div class="cell">           
+                                                    <label for="state">State</label>
+                                               </div>
+                                               <div class="cell">
+                                                    <select name="state" id="state">
+                                                         <option disabled selected>Select state</option>
+                                                         <option value="alaska">Alaska</option>
+                                                         <option value="florida">Florida</option>
+                                                    </select>
+                                               </div>
+                                           </div>                                                      
+                                        </div>
+                                     
                                     <button type="submit" class="btn">Register</button> 
                                  </form> 
                              </div>
@@ -138,18 +185,16 @@
                             <li><a href="#">Contact Sales</a></li>
                         </ul>
                     </div>
-                    <div class="footer-social">
-                        <ul>
-                            <li><a class="btn-tweet btn-social" href="#"><img src="img/icon-tweet.png" alt="Tweet"></a></li>
-                            <li><a class="btn-linkedin btn-social" href="#"><img src="img/icon-linkedin.png" alt="Share"></a></li>
-                            <li><a class="btn-google btn-social" href="#"><img src="img/icon-google.png" alt="Google+"></a></li>
-                            <li><a class="btn-fb btn-social" href="#"><img src="img/icon-fb.png" alt="Facebook"></a></li>
-                        </ul>
-                    </div>
+                <div class="footer-social">                        
+                    <a class="sprite sprite-icon-tweet" href="#">Tweet</a>
+                    <a class="sprite sprite-icon-linkedin" href="#">Share</a>
+                    <a class="sprite sprite-icon-google" href="#">Google+</a>
+                    <a class="sprite sprite-icon-fb" href="#">Facebook</a>                        
+                </div>
                 </div>
                 <div class="footer-copyright">
-                    Copyright © 2013 Veeam® Software.
-                    <a href="#">Privacy policy</a>
+                    <p>Copyright © 2013 Veeam<sup>®</sup> Software.
+                        <a href="#">Privacy policy</a></p>
                 </div>
             </footer>
         </div>
