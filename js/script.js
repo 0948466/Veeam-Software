@@ -1,4 +1,3 @@
-
 var btnNavFirst = document.querySelector(".first");
 var btnNavSecond = document.querySelector(".second");
 var ee = document.querySelector(".tab-page-second");
